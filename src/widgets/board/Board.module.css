@@ -1,0 +1,54 @@
+.col {
+    width: 244px;
+    height: 448px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+.cards {}
+
+.poligon {}
+
+.emptyPoligon {
+    justify-content: center;
+    align-items: center;
+
+    border: 2px dashed #C4C4C4;
+    border-radius: 6px;
+    /* background: #E5E5E5; */
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Iris/100 */
+
+    color: #5D5FEF;
+}
+
+.text {
+    /* width: 106px; */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #6B7280;
+}
+
+.dropIndicator {
+    background: #F0F9FF;
+}

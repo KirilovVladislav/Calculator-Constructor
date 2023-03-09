@@ -1,0 +1,47 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: 48px;
+    /* left: 80px;
+    top: 182px; */
+
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 6px;
+
+    cursor: inherit;
+}
+
+/* .button:hover {
+    border: 2px solid #5D5FEF;
+} */
+
+.button:active {
+    border: 2px solid #5D5FEF;
+}
+
+.bgBlue {
+    color: #FFFFFF;
+    background: #5D5FEF;
+}
+
+.sizeS {
+    width: 52px;
+}
+
+.sizeM {
+    width: 72px;
+}
+
+.sizeL {
+    width: 152px;
+}
+
+.sizeXL {
+    width: 232px;
+    height: 64px;
+}

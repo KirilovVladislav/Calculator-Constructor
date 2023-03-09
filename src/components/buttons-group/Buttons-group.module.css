@@ -1,0 +1,27 @@
+.group {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-flow: row wrap-reverse;
+    gap: 8px;
+    padding: 4px;
+
+    width: 240px;
+    /* height: 56px; */
+
+    cursor: move;
+    background-color: #FFFFFF;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.disabled {
+    box-shadow: none;
+    opacity: 50%;
+
+    cursor: auto;
+}
+
+.inPoligon {
+    box-shadow: none;
+}

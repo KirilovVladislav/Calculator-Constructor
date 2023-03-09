@@ -1,0 +1,23 @@
+.indicator {
+    width: 244px;
+    height: 0px;
+    position: relative;
+
+    border: 1px solid #5D5FEF;
+}
+
+.indicator::after,
+.indicator::before {
+    position: absolute;
+    transform: rotate(45deg) translateX(-3px);
+
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #5D5FEF;
+}
+
+.indicator::before {
+    right: -4px;
+}
