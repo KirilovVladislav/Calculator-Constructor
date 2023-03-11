@@ -14,21 +14,21 @@ type Props = {
 
 export const ButtonsGroup = ({ card, showLine, inPoligon, children, ...props }: Props): JSX.Element => {
     return (
-        <>
-        <section
-            className={`${styles.group} ${inPoligon && styles.inPoligon} ${card?.dasabled && styles.disabled}`}
-            {...props}
-        >
-            {children}
-            {card && card.value.map((value: string): JSX.Element => (
-                <Button
-                    sizeBtn={card.sizeBtn}
-                    value={value}
-                    key={value}
-                />
-            ))}
-        </section>
-        {showLine && <LineIndicator /> }
-        </>
+        <div className={styles.container}>
+            <section
+                className={`${styles.group} ${inPoligon && styles.inPoligon} ${card?.dasabled && styles.disabled}`}
+                {...props}
+            >
+                {children}
+                {card && card.value.map((value: string): JSX.Element => (
+                    <Button
+                        sizeBtn={card.sizeBtn}
+                        value={value}
+                        key={value}
+                    />
+                ))}
+            </section>
+            {showLine && <LineIndicator />}
+        </div>
     )
 }

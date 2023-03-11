@@ -75,7 +75,7 @@ export const Calculator = (): JSX.Element => {
     }
 
     const dragCardEnterHandler = (board: TypeBoardItem, card: TypeCalcCardItem) => {
-        board.title === 'poligon' && setDropAfter(card.order)
+        board.title === 'poligon' && setDropAfter(card.order - 1)
     }
 
     const dropCardHandler = (evt: DragEvent, board: TypeBoardItem, card: TypeCalcCardItem) => {

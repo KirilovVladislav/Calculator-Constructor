@@ -25,3 +25,7 @@
 .inPoligon {
     box-shadow: none;
 }
+
+.container {
+    position: relative;
+}
