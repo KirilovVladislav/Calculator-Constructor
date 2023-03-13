@@ -1,0 +1,14 @@
+.toggler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+
+    width: 243px;
+    height: 38px;
+    /* margin-left: auto; */
+
+    background: #F3F4F6;
+    border-radius: 6px;
+}

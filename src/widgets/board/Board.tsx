@@ -1,15 +1,17 @@
+import { memo } from 'react'
 import { TypeBoardItem } from '../../types'
 import styles from './Board.module.css'
 
 
 type Props = {
     board: TypeBoardItem,
-    drugOverBoard: boolean
-    children?: JSX.Element | JSX.Element[],
+    drugOverBoard?: boolean
+    // children?: JSX.Element | JSX.Element[],
+    children?: React.ReactNode,
     [key: string]: any,
 }
 
-export const Board = ({ board, drugOverBoard, children, ...props }: Props): JSX.Element => {
+export const Board = memo(({ board, drugOverBoard = false, children, ...props }: Props): JSX.Element => {
     const emptyPoligon = !board.items.length && board.title === 'poligon'
 
     return (
@@ -38,4 +40,4 @@ export const Board = ({ board, drugOverBoard, children, ...props }: Props): JSX.
             {/* {children} */}
         </section>
     )
-}
+})

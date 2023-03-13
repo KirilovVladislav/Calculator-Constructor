@@ -2,7 +2,7 @@
     width: 244px;
     height: 0px;
     position: absolute;
-    
+    transform: translateY(-5px) translateX(-2px);
 
     border: 1px solid #5D5FEF;
 }
@@ -10,12 +10,12 @@
 .indicator::after,
 .indicator::before {
     position: absolute;
-    transform: rotate(45deg) translateX(-3px);
+    transform: translateX(-2px) translateY(-2px) rotate(45deg);
 
     content: '';
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     background-color: #5D5FEF;
 }
 

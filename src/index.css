@@ -10,6 +10,8 @@ html {
 	text-size-adjust: none;
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
+
+	overflow-x: hidden;
 }
 
 *,

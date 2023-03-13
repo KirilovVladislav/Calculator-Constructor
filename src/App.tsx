@@ -1,9 +1,11 @@
-import { Calculator } from './features';
-import './App.css';
+import { Calculator } from './features'
+import styles from './App.module.css'
 
 function App() {
   return (
-    <Calculator />
+    <div className={styles.app}>
+      <Calculator />
+    </div>
   );
 }
 

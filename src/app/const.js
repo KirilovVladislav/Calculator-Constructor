@@ -9,3 +9,5 @@ export const boardsCalc = [
     {id: 1, title: 'cards', items: calcCards},
     {id: 2, title: 'poligon', items: []},
 ]
+
+export const POLIGON = 'poligon'

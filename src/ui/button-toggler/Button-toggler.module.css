@@ -1,0 +1,34 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    /* gap: 10px; */
+
+    width: 108px;
+    height: 36px;
+
+    background-color: transparent;
+    border: none;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    
+    color: #4D5562;
+}
+
+.active {
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 5px;
+}

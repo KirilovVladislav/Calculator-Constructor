@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import styles from './Button.module.css'
 
 
@@ -6,7 +7,7 @@ type Props = {
     sizeBtn?: string,
 }
 
-export const Button = ({value, sizeBtn = 'sizeS'}: Props): JSX.Element => {
+export const Button = memo(({value, sizeBtn = 'sizeS'}: Props): JSX.Element => {
     return (
         <button className={`
             ${styles.button} 
@@ -17,4 +18,4 @@ export const Button = ({value, sizeBtn = 'sizeS'}: Props): JSX.Element => {
             {value}
         </button>
     )
-}
+})
